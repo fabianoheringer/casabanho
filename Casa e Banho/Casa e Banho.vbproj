@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{AC6B363C-EDCA-4799-9A83-2F3D37ABA379}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>CasaBanho.frmEsquadrias</StartupObject>
+    <StartupObject>CasaBanho.frmPrincipal</StartupObject>
     <RootNamespace>CasaBanho</RootNamespace>
     <AssemblyName>Casa e Banho</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -115,11 +115,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmEsquadrias.vb">
+    <Compile Include="frm_esq_Calculo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEsquadrias.Designer.vb">
-      <DependentUpon>frmEsquadrias.vb</DependentUpon>
+    <Compile Include="frm_esq_Calculo.Designer.vb">
+      <DependentUpon>frm_esq_Calculo.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_esq_PesquisaPRO.Designer.vb">
+      <DependentUpon>frm_esq_PesquisaPRO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_esq_PesquisaPRO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MSQL.vb" />
@@ -142,8 +154,14 @@
     <Compile Include="Utils.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmEsquadrias.resx">
-      <DependentUpon>frmEsquadrias.vb</DependentUpon>
+    <EmbeddedResource Include="frm_esq_Calculo.resx">
+      <DependentUpon>frm_esq_Calculo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_esq_PesquisaPRO.resx">
+      <DependentUpon>frm_esq_PesquisaPRO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

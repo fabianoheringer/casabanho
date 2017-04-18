@@ -26,17 +26,24 @@ Public Class Utils
         End If
     End Sub
 
-    Public Shared Sub BuscaPRO()
+    Public Shared Sub BuscaPRO(ByVal num_pro As String)
+
+        If num_pro.Contains("PRO823") Then
+        Else
+            num_pro = "PRO823" & num_pro
+        End If
+
         Dim cn As New ConexaoMysql()
-        Dim Sql As String = "SELECT * from tbl_esquadrias where num_pro = '" & UCase("PRO823" & frmEsquadrias.txtnropro.Text) & "';"
+        Dim Sql As String = "SELECT * from tbl_esquadrias where num_pro = '" & num_pro & "';"
 
         Dim rs As MySqlDataReader
         rs = cn.ExecutaDataRead(Sql)
 
         If rs.HasRows = True Then
-            MessageBox.Show("Tem Registros")
             While rs.Read
-                With frmEsquadrias
+                With frm_esq_Calculo
+                    .txtnropro.Text = num_pro
+                    .txtnropro.Enabled = False
                     .txtNomeCliente.Text = rs("nome_cliente")
                     .txtCtEsq.Text = rs("vl_venda_eclaris")
                     .txtCtDesc.Text = rs("desc_fabrica")
@@ -62,13 +69,13 @@ Public Class Utils
             End While
             rs.Close()
 
-            Sql = "SELECT * from tbl_esq_vidros where num_pro = '" & UCase("PRO823" & frmEsquadrias.txtnropro.Text) & "';"
+            Sql = "SELECT * from tbl_esq_vidros where num_pro = '" & num_pro & "';"
 
             rs = cn.ExecutaDataRead(Sql)
 
 
             If rs.HasRows = True Then
-                With frmEsquadrias.lvwVidros
+                With frm_esq_Calculo.lvwVidros
                     .Items.Clear()
                     .View = View.Details
                     .GridLines = True
@@ -80,7 +87,7 @@ Public Class Utils
                     li.SubItems.Add(Format(rs("metr_vidro"), "N"))
                     li.SubItems.Add(Format(rs("vl_vidro_total"), "N"))
                     li.SubItems.Add(Format(rs("vl_ct_vidro"), "N"))
-                    frmEsquadrias.lvwVidros.Items.Add(li)
+                    frm_esq_Calculo.lvwVidros.Items.Add(li)
                 End While
                 Utils.CalculaVidro()
             Else
@@ -89,7 +96,7 @@ Public Class Utils
         End If
     End Sub
     Public Shared Sub CalculaVidro()
-        With frmEsquadrias
+        With frm_esq_Calculo
             .lblMetrVidroTotal.Text = "0,00"
             .lblVlTotalVidro.Text = "0,00"
             For intCounter = 0 To .lvwVidros.Items.Count - 1
@@ -100,4 +107,9 @@ Public Class Utils
         End With
 
     End Sub
+
+    Public Shared Sub ResetForm(F As Form)
+    End Sub
+
 End Class
+

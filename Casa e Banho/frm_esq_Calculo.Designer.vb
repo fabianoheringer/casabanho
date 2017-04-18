@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmEsquadrias
+Partial Class frm_esq_Calculo
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class frmEsquadrias
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEsquadrias))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_esq_Calculo))
         Me.txtnropro = New System.Windows.Forms.TextBox()
         Me.lblnroPro = New System.Windows.Forms.Label()
         Me.btnPesquisa = New System.Windows.Forms.Button()
@@ -39,6 +39,10 @@ Partial Class frmEsquadrias
         Me.txtNomeCliente = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnAddVidro = New System.Windows.Forms.Button()
+        Me.btnDelVidro = New System.Windows.Forms.Button()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.txtDescVidro = New System.Windows.Forms.MaskedTextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.lblVlTotalVidro = New System.Windows.Forms.Label()
@@ -86,10 +90,6 @@ Partial Class frmEsquadrias
         Me.btnCalcular = New System.Windows.Forms.Button()
         Me.Gravar = New System.Windows.Forms.Button()
         Me.btnNovaPro = New System.Windows.Forms.Button()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.btnAddVidro = New System.Windows.Forms.Button()
-        Me.btnDelVidro = New System.Windows.Forms.Button()
         Me.pnlEclaris.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -261,6 +261,46 @@ Partial Class frmEsquadrias
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(368, 212)
         Me.Panel2.TabIndex = 7
+        '
+        'btnAddVidro
+        '
+        Me.btnAddVidro.BackColor = System.Drawing.Color.White
+        Me.btnAddVidro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAddVidro.Image = CType(resources.GetObject("btnAddVidro.Image"), System.Drawing.Image)
+        Me.btnAddVidro.Location = New System.Drawing.Point(296, 52)
+        Me.btnAddVidro.Name = "btnAddVidro"
+        Me.btnAddVidro.Size = New System.Drawing.Size(29, 23)
+        Me.btnAddVidro.TabIndex = 20
+        Me.btnAddVidro.UseVisualStyleBackColor = False
+        '
+        'btnDelVidro
+        '
+        Me.btnDelVidro.BackColor = System.Drawing.Color.White
+        Me.btnDelVidro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDelVidro.Image = CType(resources.GetObject("btnDelVidro.Image"), System.Drawing.Image)
+        Me.btnDelVidro.Location = New System.Drawing.Point(327, 52)
+        Me.btnDelVidro.Name = "btnDelVidro"
+        Me.btnDelVidro.Size = New System.Drawing.Size(29, 23)
+        Me.btnDelVidro.TabIndex = 21
+        Me.btnDelVidro.UseVisualStyleBackColor = False
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(7, 192)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(84, 13)
+        Me.Label21.TabIndex = 19
+        Me.Label21.Text = "Metragem Total:"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(234, 192)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(61, 13)
+        Me.Label11.TabIndex = 18
+        Me.Label11.Text = "Valor Total:"
         '
         'txtDescVidro
         '
@@ -702,47 +742,7 @@ Partial Class frmEsquadrias
         Me.btnNovaPro.Text = "&Nova PRO"
         Me.btnNovaPro.UseVisualStyleBackColor = True
         '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(234, 192)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(61, 13)
-        Me.Label11.TabIndex = 18
-        Me.Label11.Text = "Valor Total:"
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(7, 192)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(84, 13)
-        Me.Label21.TabIndex = 19
-        Me.Label21.Text = "Metragem Total:"
-        '
-        'btnAddVidro
-        '
-        Me.btnAddVidro.BackColor = System.Drawing.Color.White
-        Me.btnAddVidro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAddVidro.Image = CType(resources.GetObject("btnAddVidro.Image"), System.Drawing.Image)
-        Me.btnAddVidro.Location = New System.Drawing.Point(296, 52)
-        Me.btnAddVidro.Name = "btnAddVidro"
-        Me.btnAddVidro.Size = New System.Drawing.Size(29, 23)
-        Me.btnAddVidro.TabIndex = 20
-        Me.btnAddVidro.UseVisualStyleBackColor = False
-        '
-        'btnDelVidro
-        '
-        Me.btnDelVidro.BackColor = System.Drawing.Color.White
-        Me.btnDelVidro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDelVidro.Image = CType(resources.GetObject("btnDelVidro.Image"), System.Drawing.Image)
-        Me.btnDelVidro.Location = New System.Drawing.Point(327, 52)
-        Me.btnDelVidro.Name = "btnDelVidro"
-        Me.btnDelVidro.Size = New System.Drawing.Size(29, 23)
-        Me.btnDelVidro.TabIndex = 21
-        Me.btnDelVidro.UseVisualStyleBackColor = False
-        '
-        'frmEsquadrias
+        'frm_esq_Calculo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -763,7 +763,8 @@ Partial Class frmEsquadrias
         Me.MaximumSize = New System.Drawing.Size(1360, 768)
         Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(874, 666)
-        Me.Name = "frmEsquadrias"
+        Me.Name = "frm_esq_Calculo"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Calculo Esquadrias"
         Me.pnlEclaris.ResumeLayout(False)
         Me.pnlEclaris.PerformLayout()
