@@ -37,8 +37,8 @@ Partial Class frm_esq_Calculo
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtNomeCliente = New System.Windows.Forms.TextBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.pnlCliente = New System.Windows.Forms.Panel()
+        Me.pnlVidros = New System.Windows.Forms.Panel()
         Me.btnAddVidro = New System.Windows.Forms.Button()
         Me.btnDelVidro = New System.Windows.Forms.Button()
         Me.Label21 = New System.Windows.Forms.Label()
@@ -54,7 +54,7 @@ Partial Class frm_esq_Calculo
         Me.lvwVidros = New System.Windows.Forms.ListView()
         Me.btnAddNegocio = New System.Windows.Forms.Button()
         Me.btnDelNegocio = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.pnlInstalacao = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtDescInst = New System.Windows.Forms.TextBox()
         Me.lblVlTotalInst = New System.Windows.Forms.Label()
@@ -63,7 +63,7 @@ Partial Class frm_esq_Calculo
         Me.Label7 = New System.Windows.Forms.Label()
         Me.cmbTipoInst = New System.Windows.Forms.ComboBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.pnlPagto = New System.Windows.Forms.Panel()
         Me.txtVlrLiqCliente = New System.Windows.Forms.TextBox()
         Me.txtVlrCliente = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -83,20 +83,40 @@ Partial Class frm_esq_Calculo
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.pnlResumo = New System.Windows.Forms.GroupBox()
         Me.lvwNegocio = New System.Windows.Forms.ListView()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.btnCalcular = New System.Windows.Forms.Button()
         Me.Gravar = New System.Windows.Forms.Button()
         Me.btnNovaPro = New System.Windows.Forms.Button()
+        Me.lblVlResVidro = New System.Windows.Forms.Label()
+        Me.labelEsquadrias = New System.Windows.Forms.Label()
+        Me.labelInstalacao = New System.Windows.Forms.Label()
+        Me.lblTotalGeral = New System.Windows.Forms.Label()
+        Me.labelVidros = New System.Windows.Forms.Label()
+        Me.labelTotal = New System.Windows.Forms.Label()
+        Me.lblMkpEsq = New System.Windows.Forms.Label()
+        Me.lblResEsq = New System.Windows.Forms.Label()
+        Me.lblMkpInst = New System.Windows.Forms.Label()
+        Me.lblVlResInst = New System.Windows.Forms.Label()
+        Me.lblMkpInstCli = New System.Windows.Forms.Label()
+        Me.lblMkpVidroCli = New System.Windows.Forms.Label()
+        Me.lblMkpVidro = New System.Windows.Forms.Label()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.lblMkpEsqCli = New System.Windows.Forms.Label()
+        Me.lblMkpTotal = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
         Me.pnlEclaris.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel4.SuspendLayout()
+        Me.pnlCliente.SuspendLayout()
+        Me.pnlVidros.SuspendLayout()
+        Me.pnlInstalacao.SuspendLayout()
+        Me.pnlPagto.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.pnlResumo.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -229,38 +249,38 @@ Partial Class frm_esq_Calculo
         Me.txtNomeCliente.Size = New System.Drawing.Size(300, 20)
         Me.txtNomeCliente.TabIndex = 5
         '
-        'Panel1
+        'pnlCliente
         '
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.lblnroPro)
-        Me.Panel1.Controls.Add(Me.txtNomeCliente)
-        Me.Panel1.Controls.Add(Me.txtnropro)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Location = New System.Drawing.Point(12, 41)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(368, 74)
-        Me.Panel1.TabIndex = 6
+        Me.pnlCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlCliente.Controls.Add(Me.lblnroPro)
+        Me.pnlCliente.Controls.Add(Me.txtNomeCliente)
+        Me.pnlCliente.Controls.Add(Me.txtnropro)
+        Me.pnlCliente.Controls.Add(Me.Label4)
+        Me.pnlCliente.Location = New System.Drawing.Point(12, 41)
+        Me.pnlCliente.Name = "pnlCliente"
+        Me.pnlCliente.Size = New System.Drawing.Size(368, 74)
+        Me.pnlCliente.TabIndex = 6
         '
-        'Panel2
+        'pnlVidros
         '
-        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.btnAddVidro)
-        Me.Panel2.Controls.Add(Me.btnDelVidro)
-        Me.Panel2.Controls.Add(Me.Label21)
-        Me.Panel2.Controls.Add(Me.Label11)
-        Me.Panel2.Controls.Add(Me.txtDescVidro)
-        Me.Panel2.Controls.Add(Me.Label10)
-        Me.Panel2.Controls.Add(Me.lblVlTotalVidro)
-        Me.Panel2.Controls.Add(Me.lblMetrVidroTotal)
-        Me.Panel2.Controls.Add(Me.txtMetrVidro)
-        Me.Panel2.Controls.Add(Me.txtTipoVidro)
-        Me.Panel2.Controls.Add(Me.Label5)
-        Me.Panel2.Controls.Add(Me.Label6)
-        Me.Panel2.Controls.Add(Me.lvwVidros)
-        Me.Panel2.Location = New System.Drawing.Point(12, 222)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(368, 212)
-        Me.Panel2.TabIndex = 7
+        Me.pnlVidros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlVidros.Controls.Add(Me.btnAddVidro)
+        Me.pnlVidros.Controls.Add(Me.btnDelVidro)
+        Me.pnlVidros.Controls.Add(Me.Label21)
+        Me.pnlVidros.Controls.Add(Me.Label11)
+        Me.pnlVidros.Controls.Add(Me.txtDescVidro)
+        Me.pnlVidros.Controls.Add(Me.Label10)
+        Me.pnlVidros.Controls.Add(Me.lblVlTotalVidro)
+        Me.pnlVidros.Controls.Add(Me.lblMetrVidroTotal)
+        Me.pnlVidros.Controls.Add(Me.txtMetrVidro)
+        Me.pnlVidros.Controls.Add(Me.txtTipoVidro)
+        Me.pnlVidros.Controls.Add(Me.Label5)
+        Me.pnlVidros.Controls.Add(Me.Label6)
+        Me.pnlVidros.Controls.Add(Me.lvwVidros)
+        Me.pnlVidros.Location = New System.Drawing.Point(12, 222)
+        Me.pnlVidros.Name = "pnlVidros"
+        Me.pnlVidros.Size = New System.Drawing.Size(368, 212)
+        Me.pnlVidros.TabIndex = 7
         '
         'btnAddVidro
         '
@@ -397,21 +417,21 @@ Partial Class frm_esq_Calculo
         Me.btnDelNegocio.TabIndex = 12
         Me.btnDelNegocio.UseVisualStyleBackColor = False
         '
-        'Panel3
+        'pnlInstalacao
         '
-        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Controls.Add(Me.Label9)
-        Me.Panel3.Controls.Add(Me.txtDescInst)
-        Me.Panel3.Controls.Add(Me.lblVlTotalInst)
-        Me.Panel3.Controls.Add(Me.Label12)
-        Me.Panel3.Controls.Add(Me.txtMetrInst)
-        Me.Panel3.Controls.Add(Me.Label7)
-        Me.Panel3.Controls.Add(Me.cmbTipoInst)
-        Me.Panel3.Controls.Add(Me.Label8)
-        Me.Panel3.Location = New System.Drawing.Point(12, 440)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(368, 80)
-        Me.Panel3.TabIndex = 8
+        Me.pnlInstalacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlInstalacao.Controls.Add(Me.Label9)
+        Me.pnlInstalacao.Controls.Add(Me.txtDescInst)
+        Me.pnlInstalacao.Controls.Add(Me.lblVlTotalInst)
+        Me.pnlInstalacao.Controls.Add(Me.Label12)
+        Me.pnlInstalacao.Controls.Add(Me.txtMetrInst)
+        Me.pnlInstalacao.Controls.Add(Me.Label7)
+        Me.pnlInstalacao.Controls.Add(Me.cmbTipoInst)
+        Me.pnlInstalacao.Controls.Add(Me.Label8)
+        Me.pnlInstalacao.Location = New System.Drawing.Point(12, 440)
+        Me.pnlInstalacao.Name = "pnlInstalacao"
+        Me.pnlInstalacao.Size = New System.Drawing.Size(368, 80)
+        Me.pnlInstalacao.TabIndex = 8
         '
         'Label9
         '
@@ -483,23 +503,23 @@ Partial Class frm_esq_Calculo
         Me.Label8.TabIndex = 14
         Me.Label8.Text = "Metragem"
         '
-        'Panel4
+        'pnlPagto
         '
-        Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel4.Controls.Add(Me.txtVlrLiqCliente)
-        Me.Panel4.Controls.Add(Me.txtVlrCliente)
-        Me.Panel4.Controls.Add(Me.GroupBox2)
-        Me.Panel4.Controls.Add(Me.Label18)
-        Me.Panel4.Controls.Add(Me.cmbEspecificador)
-        Me.Panel4.Controls.Add(Me.Label17)
-        Me.Panel4.Controls.Add(Me.cmbVendedor)
-        Me.Panel4.Controls.Add(Me.Label16)
-        Me.Panel4.Controls.Add(Me.GroupBox1)
-        Me.Panel4.Controls.Add(Me.Label13)
-        Me.Panel4.Location = New System.Drawing.Point(386, 41)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(463, 206)
-        Me.Panel4.TabIndex = 7
+        Me.pnlPagto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlPagto.Controls.Add(Me.txtVlrLiqCliente)
+        Me.pnlPagto.Controls.Add(Me.txtVlrCliente)
+        Me.pnlPagto.Controls.Add(Me.GroupBox2)
+        Me.pnlPagto.Controls.Add(Me.Label18)
+        Me.pnlPagto.Controls.Add(Me.cmbEspecificador)
+        Me.pnlPagto.Controls.Add(Me.Label17)
+        Me.pnlPagto.Controls.Add(Me.cmbVendedor)
+        Me.pnlPagto.Controls.Add(Me.Label16)
+        Me.pnlPagto.Controls.Add(Me.GroupBox1)
+        Me.pnlPagto.Controls.Add(Me.Label13)
+        Me.pnlPagto.Location = New System.Drawing.Point(386, 41)
+        Me.pnlPagto.Name = "pnlPagto"
+        Me.pnlPagto.Size = New System.Drawing.Size(463, 206)
+        Me.pnlPagto.TabIndex = 7
         '
         'txtVlrLiqCliente
         '
@@ -674,15 +694,34 @@ Partial Class frm_esq_Calculo
         Me.Label13.TabIndex = 1
         Me.Label13.Text = "Valor Cliente"
         '
-        'GroupBox3
+        'pnlResumo
         '
-        Me.GroupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.GroupBox3.Location = New System.Drawing.Point(386, 253)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(463, 181)
-        Me.GroupBox3.TabIndex = 10
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Resumo"
+        Me.pnlResumo.Controls.Add(Me.Label23)
+        Me.pnlResumo.Controls.Add(Me.Label22)
+        Me.pnlResumo.Controls.Add(Me.lblMkpInst)
+        Me.pnlResumo.Controls.Add(Me.Label36)
+        Me.pnlResumo.Controls.Add(Me.labelInstalacao)
+        Me.pnlResumo.Controls.Add(Me.labelTotal)
+        Me.pnlResumo.Controls.Add(Me.lblMkpTotal)
+        Me.pnlResumo.Controls.Add(Me.labelEsquadrias)
+        Me.pnlResumo.Controls.Add(Me.lblMkpVidroCli)
+        Me.pnlResumo.Controls.Add(Me.lblMkpEsqCli)
+        Me.pnlResumo.Controls.Add(Me.lblMkpInstCli)
+        Me.pnlResumo.Controls.Add(Me.Label37)
+        Me.pnlResumo.Controls.Add(Me.labelVidros)
+        Me.pnlResumo.Controls.Add(Me.lblMkpEsq)
+        Me.pnlResumo.Controls.Add(Me.lblResEsq)
+        Me.pnlResumo.Controls.Add(Me.lblVlResInst)
+        Me.pnlResumo.Controls.Add(Me.lblTotalGeral)
+        Me.pnlResumo.Controls.Add(Me.lblMkpVidro)
+        Me.pnlResumo.Controls.Add(Me.lblVlResVidro)
+        Me.pnlResumo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.pnlResumo.Location = New System.Drawing.Point(386, 253)
+        Me.pnlResumo.Name = "pnlResumo"
+        Me.pnlResumo.Size = New System.Drawing.Size(463, 181)
+        Me.pnlResumo.TabIndex = 10
+        Me.pnlResumo.TabStop = False
+        Me.pnlResumo.Text = "Resumo"
         '
         'lvwNegocio
         '
@@ -742,6 +781,160 @@ Partial Class frm_esq_Calculo
         Me.btnNovaPro.Text = "&Nova PRO"
         Me.btnNovaPro.UseVisualStyleBackColor = True
         '
+        'lblVlResVidro
+        '
+        Me.lblVlResVidro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblVlResVidro.Location = New System.Drawing.Point(161, 47)
+        Me.lblVlResVidro.Name = "lblVlResVidro"
+        Me.lblVlResVidro.Size = New System.Drawing.Size(145, 17)
+        Me.lblVlResVidro.TabIndex = 16
+        '
+        'labelEsquadrias
+        '
+        Me.labelEsquadrias.AutoSize = True
+        Me.labelEsquadrias.Location = New System.Drawing.Point(16, 22)
+        Me.labelEsquadrias.Name = "labelEsquadrias"
+        Me.labelEsquadrias.Size = New System.Drawing.Size(106, 13)
+        Me.labelEsquadrias.TabIndex = 17
+        Me.labelEsquadrias.Text = "Valor das Esquadrias"
+        '
+        'labelInstalacao
+        '
+        Me.labelInstalacao.AutoSize = True
+        Me.labelInstalacao.Location = New System.Drawing.Point(16, 72)
+        Me.labelInstalacao.Name = "labelInstalacao"
+        Me.labelInstalacao.Size = New System.Drawing.Size(98, 13)
+        Me.labelInstalacao.TabIndex = 18
+        Me.labelInstalacao.Text = "Valor da Instalação"
+        '
+        'lblTotalGeral
+        '
+        Me.lblTotalGeral.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTotalGeral.Location = New System.Drawing.Point(161, 101)
+        Me.lblTotalGeral.Name = "lblTotalGeral"
+        Me.lblTotalGeral.Size = New System.Drawing.Size(145, 17)
+        Me.lblTotalGeral.TabIndex = 19
+        '
+        'labelVidros
+        '
+        Me.labelVidros.AutoSize = True
+        Me.labelVidros.Location = New System.Drawing.Point(16, 47)
+        Me.labelVidros.Name = "labelVidros"
+        Me.labelVidros.Size = New System.Drawing.Size(83, 13)
+        Me.labelVidros.TabIndex = 20
+        Me.labelVidros.Text = "Valor dos Vidros"
+        '
+        'labelTotal
+        '
+        Me.labelTotal.AutoSize = True
+        Me.labelTotal.Location = New System.Drawing.Point(16, 103)
+        Me.labelTotal.Name = "labelTotal"
+        Me.labelTotal.Size = New System.Drawing.Size(58, 13)
+        Me.labelTotal.TabIndex = 21
+        Me.labelTotal.Text = "Valor Total"
+        '
+        'lblMkpEsq
+        '
+        Me.lblMkpEsq.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMkpEsq.Location = New System.Drawing.Point(312, 22)
+        Me.lblMkpEsq.Name = "lblMkpEsq"
+        Me.lblMkpEsq.Size = New System.Drawing.Size(46, 17)
+        Me.lblMkpEsq.TabIndex = 22
+        '
+        'lblResEsq
+        '
+        Me.lblResEsq.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblResEsq.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblResEsq.Location = New System.Drawing.Point(161, 22)
+        Me.lblResEsq.Name = "lblResEsq"
+        Me.lblResEsq.Size = New System.Drawing.Size(145, 17)
+        Me.lblResEsq.TabIndex = 23
+        '
+        'lblMkpInst
+        '
+        Me.lblMkpInst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMkpInst.Location = New System.Drawing.Point(312, 72)
+        Me.lblMkpInst.Name = "lblMkpInst"
+        Me.lblMkpInst.Size = New System.Drawing.Size(46, 17)
+        Me.lblMkpInst.TabIndex = 24
+        '
+        'lblVlResInst
+        '
+        Me.lblVlResInst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblVlResInst.Location = New System.Drawing.Point(161, 72)
+        Me.lblVlResInst.Name = "lblVlResInst"
+        Me.lblVlResInst.Size = New System.Drawing.Size(145, 17)
+        Me.lblVlResInst.TabIndex = 25
+        '
+        'lblMkpInstCli
+        '
+        Me.lblMkpInstCli.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMkpInstCli.Location = New System.Drawing.Point(399, 72)
+        Me.lblMkpInstCli.Name = "lblMkpInstCli"
+        Me.lblMkpInstCli.Size = New System.Drawing.Size(45, 17)
+        Me.lblMkpInstCli.TabIndex = 26
+        '
+        'lblMkpVidroCli
+        '
+        Me.lblMkpVidroCli.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMkpVidroCli.Location = New System.Drawing.Point(399, 47)
+        Me.lblMkpVidroCli.Name = "lblMkpVidroCli"
+        Me.lblMkpVidroCli.Size = New System.Drawing.Size(45, 17)
+        Me.lblMkpVidroCli.TabIndex = 27
+        '
+        'lblMkpVidro
+        '
+        Me.lblMkpVidro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMkpVidro.Location = New System.Drawing.Point(312, 47)
+        Me.lblMkpVidro.Name = "lblMkpVidro"
+        Me.lblMkpVidro.Size = New System.Drawing.Size(46, 17)
+        Me.lblMkpVidro.TabIndex = 28
+        '
+        'Label36
+        '
+        Me.Label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label36.Location = New System.Drawing.Point(399, 101)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(45, 17)
+        Me.Label36.TabIndex = 30
+        '
+        'Label37
+        '
+        Me.Label37.Location = New System.Drawing.Point(31, 133)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(120, 42)
+        Me.Label37.TabIndex = 31
+        '
+        'lblMkpEsqCli
+        '
+        Me.lblMkpEsqCli.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMkpEsqCli.Location = New System.Drawing.Point(399, 22)
+        Me.lblMkpEsqCli.Name = "lblMkpEsqCli"
+        Me.lblMkpEsqCli.Size = New System.Drawing.Size(45, 17)
+        Me.lblMkpEsqCli.TabIndex = 32
+        '
+        'lblMkpTotal
+        '
+        Me.lblMkpTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMkpTotal.Location = New System.Drawing.Point(312, 101)
+        Me.lblMkpTotal.Name = "lblMkpTotal"
+        Me.lblMkpTotal.Size = New System.Drawing.Size(46, 17)
+        Me.lblMkpTotal.TabIndex = 33
+        '
+        'Label22
+        '
+        Me.Label22.Location = New System.Drawing.Point(180, 133)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(120, 42)
+        Me.Label22.TabIndex = 34
+        '
+        'Label23
+        '
+        Me.Label23.Location = New System.Drawing.Point(329, 133)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(120, 42)
+        Me.Label23.TabIndex = 35
+        '
         'frm_esq_Calculo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -752,11 +945,11 @@ Partial Class frm_esq_Calculo
         Me.Controls.Add(Me.btnCalcular)
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox4)
-        Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.Panel4)
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pnlResumo)
+        Me.Controls.Add(Me.pnlPagto)
+        Me.Controls.Add(Me.pnlInstalacao)
+        Me.Controls.Add(Me.pnlVidros)
+        Me.Controls.Add(Me.pnlCliente)
         Me.Controls.Add(Me.pnlEclaris)
         Me.Controls.Add(Me.btnPesquisa)
         Me.MaximizeBox = False
@@ -768,18 +961,20 @@ Partial Class frm_esq_Calculo
         Me.Text = "Calculo Esquadrias"
         Me.pnlEclaris.ResumeLayout(False)
         Me.pnlEclaris.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
+        Me.pnlCliente.ResumeLayout(False)
+        Me.pnlCliente.PerformLayout()
+        Me.pnlVidros.ResumeLayout(False)
+        Me.pnlVidros.PerformLayout()
+        Me.pnlInstalacao.ResumeLayout(False)
+        Me.pnlInstalacao.PerformLayout()
+        Me.pnlPagto.ResumeLayout(False)
+        Me.pnlPagto.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.pnlResumo.ResumeLayout(False)
+        Me.pnlResumo.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -796,9 +991,9 @@ Partial Class frm_esq_Calculo
     Friend WithEvents txtCtDesc As MaskedTextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents txtNomeCliente As TextBox
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents pnlCliente As Panel
     Friend WithEvents txtCtMkp As MaskedTextBox
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents pnlVidros As Panel
     Friend WithEvents lblMetrVidroTotal As Label
     Friend WithEvents btnDelNegocio As Button
     Friend WithEvents btnAddNegocio As Button
@@ -807,7 +1002,7 @@ Partial Class frm_esq_Calculo
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents lvwVidros As ListView
-    Friend WithEvents Panel3 As Panel
+    Friend WithEvents pnlInstalacao As Panel
     Friend WithEvents txtMetrInst As MaskedTextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents cmbTipoInst As ComboBox
@@ -816,7 +1011,7 @@ Partial Class frm_esq_Calculo
     Friend WithEvents Label10 As Label
     Friend WithEvents lblVlTotalVidro As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents Panel4 As Panel
+    Friend WithEvents pnlPagto As Panel
     Friend WithEvents Label13 As Label
     Friend WithEvents txtDescPercCliente As TextBox
     Friend WithEvents Label15 As Label
@@ -833,7 +1028,7 @@ Partial Class frm_esq_Calculo
     Friend WithEvents Label17 As Label
     Friend WithEvents cmbVendedor As ComboBox
     Friend WithEvents Label16 As Label
-    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents pnlResumo As GroupBox
     Friend WithEvents lvwNegocio As ListView
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents GroupBox5 As GroupBox
@@ -852,4 +1047,23 @@ Partial Class frm_esq_Calculo
     Friend WithEvents Label11 As Label
     Friend WithEvents btnAddVidro As Button
     Friend WithEvents btnDelVidro As Button
+    Friend WithEvents Label23 As Label
+    Friend WithEvents Label22 As Label
+    Friend WithEvents lblMkpInst As Label
+    Friend WithEvents Label36 As Label
+    Friend WithEvents labelInstalacao As Label
+    Friend WithEvents labelTotal As Label
+    Friend WithEvents lblMkpTotal As Label
+    Friend WithEvents labelEsquadrias As Label
+    Friend WithEvents lblMkpVidroCli As Label
+    Friend WithEvents lblMkpEsqCli As Label
+    Friend WithEvents lblMkpInstCli As Label
+    Friend WithEvents Label37 As Label
+    Friend WithEvents labelVidros As Label
+    Friend WithEvents lblMkpEsq As Label
+    Friend WithEvents lblResEsq As Label
+    Friend WithEvents lblVlResInst As Label
+    Friend WithEvents lblTotalGeral As Label
+    Friend WithEvents lblMkpVidro As Label
+    Friend WithEvents lblVlResVidro As Label
 End Class

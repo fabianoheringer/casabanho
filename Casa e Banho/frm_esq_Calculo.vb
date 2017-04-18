@@ -1,6 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class frm_esq_Calculo
+    Public tipo As String
+
     Public Sub btnPesquisa_Click(sender As Object, e As EventArgs) Handles btnPesquisa.Click
         frm_esq_PesquisaPRO.ShowDialog()
     End Sub
@@ -42,10 +44,26 @@ Public Class frm_esq_Calculo
             .Columns.Add("Valor", 100, HorizontalAlignment.Left)
             .Columns.Add("Custo", 100, HorizontalAlignment.Left)
         End With
+
+        For Each ctl In Me.Controls
+            ctl.Enabled = False
+        Next
+        btnNovaPro.Enabled = True
+        btnPesquisa.Enabled = True
+        pnlCliente.Enabled = True
+        txtNomeCliente.Enabled = False
     End Sub
-    Private Sub btnNovaPro_Click(sender As Object, e As EventArgs) Handles btnNovaPro.Click
+    Public Sub btnNovaPro_Click(sender As Object, e As EventArgs) Handles btnNovaPro.Click
         Me.Controls.Clear()
         Me.InitializeComponent()
         frm_esq_Calculo_Load(e, e)
+    End Sub
+
+    Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
+        Utils.CalcularEsquadria(txtnropro.Text)
+    End Sub
+
+    Private Sub txtnropro_TextChanged(sender As Object, e As EventArgs) Handles txtnropro.TextChanged
+
     End Sub
 End Class

@@ -40,6 +40,7 @@ Partial Class frm_esq_PesquisaPRO
         '
         'lvwPro
         '
+        Me.lvwPro.HideSelection = False
         Me.lvwPro.Location = New System.Drawing.Point(12, 33)
         Me.lvwPro.Name = "lvwPro"
         Me.lvwPro.Size = New System.Drawing.Size(649, 128)
