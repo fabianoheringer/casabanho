@@ -107,9 +107,5 @@ Public Class Utils
         End With
 
     End Sub
-
-    Public Shared Sub ResetForm(F As Form)
-    End Sub
-
 End Class
 
